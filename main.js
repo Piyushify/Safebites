@@ -3,8 +3,6 @@ console.log('JS Connected!');
 const menubtn = document.querySelector(".menubtn");
 const scrollpad = document.querySelector(".scrollpad");
 const seeker = document.querySelector(".seeker");
-const greets = ["Hello","Sayonara","Khublei"];
-const greeting = document.getElementById("greeting");
 
 let timer;
 
