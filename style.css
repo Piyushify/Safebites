@@ -21,6 +21,7 @@ body {
     hsla(70, 60%, 100%, 1),
     hsla(70, 55%, 85%, 1));
     height: 100vh;
+    touch-action: none;
 }
 
 header {
@@ -188,17 +189,11 @@ section {
     letter-spacing: 2px;
 }
 
-#mapper {
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-#mapper div {
-    display: block;
+#map {
+    width: 300px;
+    height: 300px;
     border: 2px solid;
-    min-width: 100%;
+    border-radius: 20px;
 }
 
 #quoter {
@@ -242,10 +237,7 @@ section {
     font-size: 1.45em;
     line-height: 1.5;
     letter-spacing: 2px;
-}
-
-#info li {
-    margin: 20px;
+    background: red;
 }
 
 #reviews {
