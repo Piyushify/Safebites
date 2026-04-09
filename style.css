@@ -56,6 +56,20 @@ footer li {
     font-size: 45px;
 }
 
+#searchbar {
+    background: hsla(235, 0%, 95%, 0.25);
+    border: 2px solid hsla(70, 70%, 10%, 1);
+    padding: 8px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 1em;
+    width: 80%;
+}
+
+#searchbar::placeholder {
+    color: hsla(70, 70%, 10%, 1);
+}
+
 .menubtn {
     display: none;
     position: fixed;
@@ -160,7 +174,7 @@ section {
     text-align: left;
 }
 
-#about {
+#info-det {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,11 +185,11 @@ section {
     letter-spacing: 2px;
 }
 
-#about li {
+#info-det li {
     margin: 20px;
 }
 
-#about a {
+#info-det a {
     -webkit-text-stroke: hsla(70, 70%, 10%, 1);
     color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -183,7 +197,7 @@ section {
     -webkit-tap-highlight-color: transparent;
 }
 
-#skills {
+#info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,9 +208,23 @@ section {
     letter-spacing: 2px;
 }
 
-#skills li {
+#info li {
     margin: 20px;
 }
+
+#reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: hsla(70, 70%, 10%, 1);
+    font-size: 1.45em;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+
+
 
 footer a {
     color: hsla(70, 70%, 10%, 1);
