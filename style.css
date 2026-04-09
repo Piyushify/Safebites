@@ -92,7 +92,7 @@ footer li {
 }
 
 #searchbar::placeholder {
-    color: hsla(70, 70%, 10%, 1);
+    color: hsla(0, 85%, 45%, 1);
 }
 
 .menubtn {
@@ -219,33 +219,41 @@ section {
     align-items: center;
     flex-direction: column;
     color: hsla(70, 70%, 10%, 1);
-    font-size: 1.45rem;
-    line-height: 1.5;
-    letter-spacing: 2px;
 }
 
-#info-det li {
-    margin: 20px;
-}
 
-#info-det a {
-    -webkit-text-stroke: hsla(70, 70%, 10%, 1);
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-}
 
 #info {
+    padding: 20px;
+    padding-top: 150px;
+}
+
+#info h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+}
+
+#info div {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     flex-direction: column;
     color: hsla(70, 70%, 10%, 1);
-    font-size: 1.45em;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    background: red;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+table td,th {
+    padding: 10px;
+    border: 2px solid;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 20px;
 }
 
 #reviews {
@@ -287,4 +295,15 @@ footer a {
     border: none;
     padding: 12px;
     transform: translateX(-100%);
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    touch-action: none;
+    padding: 20px;
+    font-size: 1.25em;
 }
