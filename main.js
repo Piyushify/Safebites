@@ -61,7 +61,6 @@ navigator.geolocation.getCurrentPosition(
     initMap(userLat, userLng);
   },
   () => {
-    alert("Location access denied. Using default location.");
     initMap(26.14, 89.97); // fallback location
   }
 );
@@ -105,25 +104,10 @@ function getDistance(lat1, lon1, lat2, lon2) {
 }
 
 const places = [
-  { name: "Dhaba", lat: 26.14, lng: 89.97, type: "food" },
-  { name: "Cafe", lat: 26.15, lng: 89.98, type: "cafe" },
-  { name: "Repair Shop", lat: 26.18, lng: 89.99, type: "service" }
+  { name: "Tasty Bites", lat: 26.14, lng: 89.97, type: "food", rating: 4.5 },
+  { name: "Local Cafe", lat: 26.15, lng: 89.98, type: "cafe", rating: 2.1 },
+  { name: "Street Dhaba", lat: 26.145, lng: 89.975, type: "food", rating: 3.8 }
 ];
-
-const icons = {
-  food: L.icon({
-    iconUrl: "food.png",
-    iconSize: [30, 30]
-  }),
-  cafe: L.icon({
-    iconUrl: "cafe.png",
-    iconSize: [30, 30]
-  }),
-  service: L.icon({
-    iconUrl: "service.png",
-    iconSize: [30, 30]
-  })
-};
 
 function loadMarkers(map, userLat, userLng) {
   places.forEach(place => {
@@ -135,11 +119,22 @@ function loadMarkers(map, userLat, userLng) {
     );
 
     if (distance <= 2) {
-      L.marker([place.lat, place.lng], {
-        icon: icons[place.type]
+
+      // Color based on hygiene
+      let color = place.rating >= 4 ? "green" :
+                  place.rating >= 3 ? "orange" : "red";
+
+      L.circleMarker([place.lat, place.lng], {
+        radius: 8,
+        color: color,
+        fillOpacity: 0.8
       })
         .addTo(map)
-        .bindPopup(`${place.name} (${place.type})`);
+        .bindPopup(`
+          <b>${place.name}</b><br>
+          ⭐ ${place.rating} Hygiene Score<br>
+          ${color === "green" ? "🟢 Safe" : color === "orange" ? "🟡 Average" : "🔴 Risky"}
+        `);
     }
   });
 }

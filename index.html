@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,20 +12,37 @@
   
   <script src="https://kit.fontawesome.com/30b8862504.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  
   <link rel="stylesheet" href="style.css">
   
 </head>
 
 <body>
+  
   <header>
-    <h1 class="name"><span>SAFE</span><span>BITES</span><div><span>🍎</span><span>✓</span></div></h1>
+    
+    <h1 id="banner">
+      
+      <span id="name">
+        <span>SAFE</span><span>BITES</span>
+      </span>
+      
+      <span id="logo">
+        <img src="imgs/checked-apple.png" alt="" />
+      </span>
+    </h1>
+    
     <div>
+      
     <input type="search" id="searchbar" placeholder="Search here"/>
-      <label for="searchbar" id="magnifine"><i class="fa-solid fa-magnifying-glass"></i></label>
-      <button id="mic"><i class="fa-solid fa-microphone"></i></button>
-      <button id="cam"><i class="fa-regular fa-camera"></i></button>
-      </div>
+    
+    <label for="searchbar" id="magnifine"><i class="fa-solid fa-magnifying-glass"></i></label>
+    
+    <button id="mic"><i class="fa-solid fa-microphone"></i></button>
+      
+    <button id="cam"><i class="fa-regular fa-camera"></i></button>
+      
+    </div>
+    
   </header>
   
   <main>
@@ -41,74 +57,109 @@
   </div>
   
   <nav class="scrollpad">
+    
     <div class="scrollers"><a href="#home">Home</a></div>
+    
     <div class="scrollers"><a href="#info">Info</a></div>
+    
     <div class="scrollers"><a href="#info-det">Detailed Info</a></div>
+    
     <div class="scrollers"><a href="#reviews">Reviews</a></div>
+    
   </nav>
     
     <section id="home">
+      
       <div id="mapper">
-        <div id="map">
-          
-        </div>
+        
+        <div id="map"></div>
+        
+      </div>
+      <div id="topplace">
+        <h3>🍴 Tasty Bites</h3>
+        <p>⭐ 4.5 Hygiene Score</p>
+        <span class="safe">🟢 SafeBite Verified</span>
       </div>
       <div id="quoter">
           YOUR SAFETY OUR PRIORITY
       </div>
+      
     </section>
     
     <section id="info">
-      <h2>TASTY BITES</h2>
+      
+      <h2 id="tasty">TASTY BITES</h2>
+      
       <div>
         <table>
+          
           <tr>
             <th>Rating</th>
-            <td>5</td>
+            <td>5⭐</td>
           </tr>
+          
           <tr>
             <th>Pricing</th>
             <td>₹200-₹400</td>
           </tr>
+          
         </table>
-        <textarea id="review" readonly>Great food</textarea>
+        
+        <h2 id="rev">Reviews</h2>
+      
+        <textarea class="review" readonly>Great Food, Amazing taste, top notch cleanliness</textarea>
+      
       </div>
     </section>
     
     <section id="info-det">
+      
       <h2>Detailed Reviews</h2>
+      
       <table border="0">
+        
         <tr>
           <th>Food handling</th>
           <td>4/5</td>
         </tr>
+        
         <tr>
           <th>Facilities</th>
           <td>4/5</td>
         </tr>
+        
         <tr>
           <th>Cleanliness</th>
           <td>5/5</td>
         </tr>
+        
         <tr>
           <th>Taste</th>
           <td>4/5</td>
         </tr>
+        
         <tr>
           <th>Serving Time</th>
           <td>5/5</td>
         </tr>
+        
       </table>
+      
     </section>
     
     <section id="reviews">
-      Reviews here
+      <h2>Confirm Rating</h2>
+      <span>
+        <input type="checkbox" id="yes"/>
+        <label for="yes">YES</label>
+        <input type="checkbox" id="no"/>
+        <label for="no">NO</label>
+      </span>
+      <h3 id="plead">Please share your review</h3>
+      <textarea class="review"></textarea>
     </section>
     
   </main>
-  
-  <footer>
-  </footer>
   
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="main.js"></script>
