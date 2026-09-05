@@ -1,5 +1,13 @@
+import Header from "@/components/Header";
+import Main from "@/components/Main";
+import BottomNav from "@/components/BottomNav";
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center">HI</div>
+    <main>
+      <Header />
+      <Main />
+      <BottomNav />
+    </main>
   );
 }
