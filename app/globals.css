@@ -8,25 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  background-color: #f7f7f7;
-  color: #555;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 button,
 input {
   font: inherit;
-}
-
-.safe-font {
-  font-family: cause, Arial, sans-serif;
-}
-
-@font-face {
-  font-family: cause;
-  src: url("/fonts/Cause-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }

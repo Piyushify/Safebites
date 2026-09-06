@@ -3,19 +3,24 @@ import Staricon from "./icons/Staricon";
 import Scanicon from "./icons/Scanicon";
 import Navicon from "./icons/Navicon";
 import Hearticon from "./icons/Hearticon";
+import Link from "next/link"
 
 export default function Footer() {
   return (
     <footer className="fixed bottom-0 left-0 flex py-3 rounded-t-4xl border-t-3 border-[#45454511] w-full">
       <nav>
-        <ul className="flex *:flex *:justify-center *:flex-col *:items-center w-screen justify-evenly font-cause font-bold text-xs text-[#4d4d4dd7]">
+        <ul className="flex *:flex  *:justify-center *:flex-col *:items-center w-screen justify-evenly font-cause font-bold text-xs text-[#4d4d4dd7]">
           <li className="active">
-            <Homeicon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
-            Home
+            <Link href="/" className="flex flex-col items-center">
+              <Homeicon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
+              Home
+            </Link>
           </li>
           <li>
-            <Staricon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
-            Reviews
+            <Link href="/reviews" className="flex flex-col items-center">
+              <Staricon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
+              Reviews
+            </Link>
           </li>
           <li className="rounded-full -translate-y-4 w-5 h-5">
             <button className="p-3 rounded-full  bg-linear-135 from-[#33cc80] to-[#66ccff] shadow-lg inset-shadow-sm inset-shadow shadow-[#33cc8055]">
@@ -23,12 +28,16 @@ export default function Footer() {
             </button>
           </li>
           <li>
-            <Navicon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
-            Navigate
+            <Link href="/navigation" className="flex flex-col items-center">
+              <Navicon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
+              Navigate
+            </Link>
           </li>
           <li>
-            <Hearticon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
-            Favorites
+            <Link href="/favorites" className="flex flex-col items-center">
+              <Hearticon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
+              Favorites
+            </Link>
           </li>
         </ul>
       </nav>
