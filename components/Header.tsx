@@ -7,16 +7,16 @@ import Micicon from "./icons/Micicon";
 export default function Header() {
   return (
     <header
-      className="p-4 flex w-100% flex-col gap-2 bg-linear-135 from-[#33cc80] to-[#66ccff] rounded-t-4xl"
+      className="py-4 px-6 flex w-100% flex-col gap-2 bg-linear-135 from-[#33cc80] to-[#66ccff] rounded-t-4xl"
     >
-      <div className="flex items-center">
-        <div className="ml-4 text-[#fafafa]">
+      <div className="px-1 flex items-center gap-4">
+        <div className="text-[#fafafa]">
           <h1 className="text-center text-4xl font-semibold">SafeBites</h1>
           <h2 className="-mt-2 text-center opacity-70 text-xs font-bold">
             Your Safety, Our Priority
           </h2>
         </div>
-        <div className="flex grow justify-evenly">
+        <div className="flex grow justify-between">
           <button>
             <Touristicon className="w-6 h-6 m-1" />
           </button>
