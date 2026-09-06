@@ -6,7 +6,7 @@ import Hearticon from "./icons/Hearticon";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 flex py-3 rounded-t-4xl border-t-3 border-[#45454511]  bg-[#fafafa] w-screen">
+    <footer className="fixed bottom-0 left-0 flex py-3 rounded-t-4xl border-t-3 border-[#45454511] w-full">
       <nav>
         <ul className="flex *:flex *:justify-center *:flex-col *:items-center w-screen justify-evenly font-cause font-bold text-xs text-[#4d4d4dd7]">
           <li className="active">

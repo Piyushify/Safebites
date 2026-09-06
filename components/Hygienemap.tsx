@@ -2,8 +2,8 @@ import Map from './Map'
 export default function Hygienemap() {
   return (
     <section className="p-4">
-      <h3 className="text-center text-[#454545aa]">
-        <span className="text-xl font-safety font-bold">Your</span><span className="text-2xl font-cause font-bold"> Hygiene </span><span className="text-xl font-safety font-bold">Map</span>
+      <h3 className="text-center text-2xl font-bold text-[#454545aa]">
+        Your Hygiene Map
       </h3>
       <div className="shadow-md inset-shadow-sm aspect-square relative mt-4 rounded-4xl overflow-hidden">
         <Map/>

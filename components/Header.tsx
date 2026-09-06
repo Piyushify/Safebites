@@ -1,3 +1,4 @@
+
 import Touristicon from "./icons/Touristicon";
 import Settingsicon from "./icons/Settingsicon";
 import Searchicon from "./icons/Searchicon";
@@ -5,18 +6,14 @@ import Micicon from "./icons/Micicon";
 
 export default function Header() {
   return (
-    <header className="p-4 flex w-100% flex-col gap-2 bg-linear-135 from-[#33cc80] to-[#66ccff]">
+    <header
+      className="p-4 flex w-100% flex-col gap-2 bg-linear-135 from-[#33cc80] to-[#66ccff] rounded-t-4xl"
+    >
       <div className="flex items-center">
         <div className="ml-4 text-[#fafafa]">
-          <h1 className="text-center">
-            <span className="font-safety font-semibold text-3xl">Safe</span>
-            <span className="font-cause text-4xl font-bold">Bites</span>
-          </h1>
-          <h2 className="-mt-3 text-center *:opacity-75">
-            <span className="font-cause text-sm font-bold">Your </span>
-            <span className="font-safety font-medium text-xs">Safety,</span>
-            <span className="font-cause text-sm font-bold"> Our </span>
-            <span className="font-safety font-medium text-xs">Priority</span>
+          <h1 className="text-center text-4xl font-semibold">SafeBites</h1>
+          <h2 className="-mt-2 text-center opacity-70 text-xs font-bold">
+            Your Safety, Our Priority
           </h2>
         </div>
         <div className="flex grow justify-evenly">
@@ -29,7 +26,7 @@ export default function Header() {
         </div>
       </div>
       <form
-        className="rounded-full items-center overflow-hidden flex bg-[#fafafa] font-cause font-black text-[#454545aa] text-sm py-2 focus-within:border-[#33cc80]
+        className="rounded-full items-center overflow-hidden flex bg-[#fafafa] font-cause font-semibold text-[#454545aa] text-sm py-2 focus-within:border-[#33cc80]
   focus-within:ring-2 focus-within:ring-[#33cc80]/30 focus-within:-translate-y-1/25
   transition-all duration-200"
       >

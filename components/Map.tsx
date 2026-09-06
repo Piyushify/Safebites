@@ -12,7 +12,7 @@ export default function MapComponent() {
         zoom: 12,
       }}
       mapStyle="https://tiles.openfreemap.org/styles/liberty"
-      style={{ width: "100%", height: "100%" }}
+      style={{ width: "100%", height: "100vh" }}
     />
   );
 }

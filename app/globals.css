@@ -21,12 +21,12 @@ input {
 }
 
 .safe-font {
-  font-family: samarkan, Arial, sans-serif;
+  font-family: cause, Arial, sans-serif;
 }
 
 @font-face {
-  font-family: samarkan;
-  src: url("/fonts/sam.ttf") format("truetype");
+  font-family: cause;
+  src: url("/fonts/Cause-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
