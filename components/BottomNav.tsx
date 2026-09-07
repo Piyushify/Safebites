@@ -33,7 +33,7 @@ export default function Footer() {
           <li className={pathname === "/navigation" ? "underline decoration-4 decoration-[#33cc80] decoration-dotted" : "text-[#4d4d4dd7]"}>
             <Link href="/navigation" className="flex flex-col items-center">
               <Navicon className="w-5 h-5 m-1 fill-[#4d4d4d]" />
-              Navigation
+              Navigate
             </Link>
           </li>
           <li className={pathname === "/favorites" ? "underline decoration-4 decoration-[#33cc80] decoration-dotted" : "text-[#4d4d4dd7]"}>

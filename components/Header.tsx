@@ -12,7 +12,7 @@ export default function Header() {
       <div className="px-1 flex items-center gap-4">
         <div className="text-[#fafafa]">
           <h1 className="text-center text-4xl font-semibold">SafeBites</h1>
-          <h2 className="-mt-2 text-center opacity-70 text-xs font-bold">
+          <h2 className="-mt-1 text-center opacity-70 text-xs font-bold">
             Your Safety, Our Priority
           </h2>
         </div>

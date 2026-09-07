@@ -7,7 +7,7 @@ const fredokaFont = Fredoka({
 
 export default function Home() {
   return (
-    <>
+    <main className="min-h-svh">
       <section className={`p-4 ${fredokaFont.className}`}>
         <h3 className="text-center text-2xl font-bold text-[#454545aa]">
           Your Hygiene Map
@@ -39,6 +39,6 @@ export default function Home() {
         </h3>
         <p className="pt-4 text-3xl">COMING SOON</p>
       </section>
-    </>
+    </main>
   )
 }

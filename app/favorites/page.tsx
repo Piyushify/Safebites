@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <section className="text-center p-4 font-bold text-[#454545aa]">
+    <section className="text-center p-4 font-bold text-[#454545aa] min-h-svh">
       <h3 className="text-2xl">
         Favorites
       </h3>
